@@ -30,7 +30,8 @@ Turn::Turn(int _nTurns, int pla, int tiI, int dic, char type, int tiF){
 
 
 
-
+//El operador << pertenece a la libreria ostream
+//con esta sobrecarga es más fácil imprimir todos los atributos de esta clase
 ostream & operator << (ostream &os, const Turn &t2){
     //se regresara un objeto de tipo ostream
     os << t2.turnAct <<" "<<t2.playerT <<" "<<t2.tileTI<<" "
